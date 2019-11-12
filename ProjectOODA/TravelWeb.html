@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    	<title>Travel Web</title>
+    	<meta charset="utf-8" name="viewport">
+    	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    </head>
+    <body>
+    <section class="header">
+    	<div class="container-fluid">
+    			<div class="box">
+    			<!-- <img src="images/icon.png" class="logo-banner"> -->
+    			  <iframe width="100%" height="450px" src="https://momento360.com/e/u/9f6589e595df4ce79c5d468ad26b4ad8?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75.96666666666665">
+    			  </iframe>
+    			<div class="display">
+    			<div class="button-box">
+    			  
+    			  <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+    			  <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+    		    </div>
+    		    <br>
+    		    <div class="social-icon">
+                    <img src="https://img.icons8.com/color/48/000000/facebook-new.png">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png">   
+                    <img src="https://img.icons8.com/cute-clipart/50/000000/instagram-new.png">
+    		    </div>
+    		    </div>
+    		</div>
+    		<div class="find">
+    		<h1>Booking.com</h1>
+    		<div class="input-group">
+    			<input style="font-size: 14px" type="text" class="form-control" placeholder="Search Country or City">
+    			<div class="input-group-append">
+    			 	<button style="font-size: 14px" type="submit" class="input-group-text btn">Search</button>
+    			</div>
+    		</div>
+    	</div>
+        </div>
+
+    </section>
+    <br><br><br><br><br><br><br>
+    <section class="Q-Search">
+    	<div class="search">
+		
+
+		<!-- Search Contents -->
+		
+		<div class="container fill_height">
+			<div class="row fill_height">
+				<div class="col fill_height">
+
+					<!-- Search Tabs -->
+
+					<div class="search_tabs_container">
+						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+						</div>		
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel active">
+						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_1" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_1" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_2" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_2" class="dropdown_item_select search_input">
+									<option>0</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_3" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_3" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_4" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_4" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_4" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_5" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_5" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_5" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_6" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>destination</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<div class="search_item">
+								<div>check in</div>
+								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>check out</div>
+								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+							</div>
+							<div class="search_item">
+								<div>adults</div>
+								<select name="adults" id="adults_6" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>children</div>
+								<select name="children" id="children_6" class="dropdown_item_select search_input">
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+								</select>
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+    </section>
+    <section class="destination">
+        	<h1>Đề Xuất Điểm Đến</h1>
+        	<div class="container">
+        		
+                 <div class="row">
+                 	<div class="col-md-4 ">
+                        <div class="feature-box"></div>
+                        <div class="feature-img">
+                        <img style="cursor: pointer;" src="images/9.jpg">
+                        <div class="price">
+                             <p>Giá Trung Bình: 600.000 VNĐ</p>
+                        </div>
+                        </div>
+
+                        <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <br>
+                        <div>
+                        	<span><i style="color: red" class="fa fa-map-marker"></i> Vịnh Hạ Long, Việt Nam</span>
+                        	<span><i class="fa fa-sun-o"></i> 3 ngày</span>
+                        	<span><i style="color: black" class="fa fa-moon-o"></i> 2 đêm</i></span>
+                 	    </div>
+                 	   </div>
+                 	<div class="col-md-4 ">
+                         <div class="feature-box"></div>
+                        <div class="feature-img">
+                        <img style="cursor: pointer;" src="images/5.jpg">
+                        <div class="price">
+                             <p>Giá Trung Bình: 450.000 VNĐ</p>
+                        </div>
+                        </div>
+
+                        <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                        </div>
+                        <br>
+                        <div>
+                        	<span><i style="color: red" class="fa fa-map-marker"></i> Phú Quốc, Việt Nam</span>
+                        	<span><i class="fa fa-sun-o"></i> 2 ngày</span>
+                        	<span><i style="color: black" class="fa fa-moon-o"></i> 1 đêm</i></span>
+                 	    </div>
+                 	</div>
+                 	<div class="col-md-4">
+                        <div class="feature-box"></div>
+                        <div class="feature-img">
+                        <img style="cursor: pointer;" src="images/7.jpg">
+                        <div class="price">
+                             <p>Giá Trung Bình: 600.000 VNĐ</p>
+                        </div>
+                        </div>
+
+                        <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <br>
+                        <div>
+                        	<span><i style="color: red" class="fa fa-map-marker"></i> Đà Nẵng, Việt Nam</span>
+                        	<span><i class="fa fa-sun-o"></i> 3 ngày</span>
+                        	<span><i style="color: black" class="fa fa-moon-o"></i> 2 đêm</i></span>
+                 	    </div>
+                 	   </div> 
+                </div>
+            </div>
+    </section>
+    <section class="discover">
+    	<h1>Khám Phá</h1>
+     <div class="container">
+       <div class="row swiper-container">
+       		<div class="swiper-wrapper">
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-1.jpg">
+             <h4>Nước Mỹ</h4>
+             <p>Tận hưởng thư dãn, nhà hàng, và mua sắm trong chuyến đi của bạn đến Mĩ.</p>
+            </div>
+          </div>
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-5.jpg">
+             <h4>Hàn Quốc</h4>
+             <p>Tận hưởng thư dãn, nhà hàng, và mua sắm trong chuyến đi của bạn đến Hàn Quốc.</p>
+            </div>
+          </div>
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-6.jpg">
+             <h4>Philipines</h4>
+             <p>Tận hưởng nhà hàng, và mua sắm trong chuyến đi của bạn đến Philipines.</p>
+            </div>
+          </div>
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-2.jpg">
+             <h4>Nước Nga</h4>
+             <p>Tận hưởng phong cảnh, phố cổ trong chuyến đi kế tiếp của bạn đến Nga.</p>
+            </div>
+          </div>
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-3.jpg">
+             <h4 left="80%">Vương quốc Anh</h4>
+             <p>Nếu ưa thích phong cách hoàng gia trong ẩm thực, đừng bỏ lỡ Anh.</p>
+            </div>
+          </div>
+          <div class="col-md-3 swiper-slide">
+          	<div class="discover-box">
+             <img src="images/1-4.jpg">
+             <h4>Nước Pháp</h4>
+             <p>Tận hưởng sự tĩnh lặng, phong cảnh lãng mạn trong chuyến đi đến Pháp.</p>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-pagination"></div>
+	    <!-- Add Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+       </div>
+           <!-- Add Pagination -->
+     </div>
+    </section>
+    <section class="banner">
+    	<div class="banner-box">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-8">
+    					<h2>Get 30% On Top Destination</h2>
+    					<p>Book your tickets before November 10.</p>
+    				</div>
+    				<div class="col-md-4">
+    				<a>
+    					<button type="button" class="booking-btn">Book Now</button>
+    				</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="users-feedback">
+    	<h1 style="color: #fff">Phản Hồi</h1>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="user-review">
+    					<h3>"Best holiday in Phu Quoc"</h3>
+    					<p>Đây là 1 kì nghỉ tuyệt vời với tôi. có quá nhiều trải nhiệm, điều mới lạ tôi có được sau chuyến đi này. Nếu có lần sau chắc chắn tôi sẽ quay lại đây để tiếp tục khám phá.</p>
+    					<h4><strong>--Norin Phạm--</strong></h4>
+    					<br><br>
+    				</div>
+                       <img src="images/u1.jpg">
+    			</div>
+    			<div class="col-md-4">
+    				<div class="user-review">
+    					<h3>"Best holiday in Ha Long"</h3>
+    					<p>Đây là 1 kì nghỉ tuyệt vời với tôi. có quá nhiều trải nhiệm, điều mới lạ tôi có được sau chuyến đi này. Nếu có lần sau chắc chắn tôi sẽ quay lại đây để tiếp tục khám phá.</p>
+    					<h4><strong>--Norin Phạm--</strong></h4>
+    					<br><br>
+    				</div>
+                       <img src="images/u1.jpg">
+    			</div>
+    			<div class="col-md-4">
+    				<div class="user-review">
+    					<h3>"Best holiday in Nha Trang"</h3>
+    					<p>Đây là 1 kì nghỉ tuyệt vời với tôi. có quá nhiều trải nhiệm, điều mới lạ tôi có được sau chuyến đi này. Nếu có lần sau chắc chắn tôi sẽ quay lại đây để tiếp tục khám phá.</p>
+    					<h4><strong>--Norin Phạm--</strong></h4>
+    					<br><br>
+    				</div>
+                       <img src="images/u1.jpg">
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <div><br></div>
+    <section class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+    				<img src="images/icon.png" class="logo">
+    				<p>Đi luôn luôn có ích. Nếu bạn đến một đất nước tốt đẹp hơn, bạn sẽ học hỏi để cải thiện đất nước mình. Nếu chẳng may bạn đến một đất nước tệ hơn, bạn sẽ học để yêu đất nước của chính mình.</p>
+    			</div>
+    			<div class="col-md-3">
+    				<h3> About Booking </h3>
+    				<p>About Us</p>
+    				<p>Policies</p>
+    				<p>Contact</p>
+    				<p>Blogs</p>
+    				<p>FAQs</p>
+    			</div>
+    			<div class="col-md-3">
+    				<h3>Quick Contact</h3>
+    				<p><i class="fa fa-phone" ></i> : +84 967872763</p>
+    				<p><i class="fa fa-envelope"></i> : nguyenhoang@gmail.com</p>
+    				<p><i class="fa fa-home"></i> : Hà Nội, Việt Nam</p>
+
+    			</div>
+    			<div class="col-md-3">
+    				<h3>Follow us on</h3>
+                    <p><i class="fa fa-facebook-official"></i> Facebook</p>
+                    <p><i class="fa fa-twitter"></i> Twitter</p>
+                    <p><i class="fa fa-instagram"></i> Instagram</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div> <hr></div>
+    </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <script type="text/javascript" src="./myscript.js"></script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5dca38f643be710e1d1cd3b3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    </body>
+    <!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+</html>
